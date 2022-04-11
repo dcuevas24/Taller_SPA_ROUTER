@@ -4,6 +4,17 @@ class Router {
     this._loadInitialRoute();
   }
 
+  //Cambiar la URL y obtener el contenido de la pagina a la que quiero ir
+  loadRoute(...urlSegs) {
+    const matchedRoute = this._matchUrlToRoute(urlSegs);
+
+    const url = `/${urlSegs.join("/")}`;
+    history.pushState({}, "this works", url);
+
+    const routerOutElm = document.querySelectorAll("[data-router]")[0];
+    routerOutElm.innerHTML = matchedRoute.template;
+  }
+
   /*Hacer match URL con la Ruta (Unir URL a la que se quiere ir con la que nos
   esta mostrando)*/
   _matchUrlToRoute(urlSegs) {

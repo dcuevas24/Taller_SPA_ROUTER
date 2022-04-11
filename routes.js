@@ -4,7 +4,7 @@ const routes = [
     template: "<h1>Hola</h1>",
   },
   {
-    path: "/contacto",
+    path: "/contact",
     template: "<h1>Contacto mi correo r@micorreo.com</h1>",
   },
   {
@@ -12,3 +12,5 @@ const routes = [
     template: "<h1>About Me</h1>",
   },
 ];
+
+export default routes;

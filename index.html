@@ -9,14 +9,16 @@
   <body>
     <header>
       <ul>
-        <li><button onclick="router.loadRoute('')">home</button></li>
+        <li><button id="home">home</button></li>
         <li>
-          <button onclick="router.loadRoute('contacto')">contacto</button>
+          <button id="contact">contacto</button>
         </li>
-        <li><button onclick="router.loadRoute('about')">about me</button></li>
+        <li><button id="about">about me</button></li>
       </ul>
     </header>
 
     <div data-router></div>
+
+    <script src="./index.js" type="module"></script>
   </body>
 </html>

@@ -41,3 +41,5 @@ class Router {
     this.loadRoute(...pathSegs);
   }
 }
+
+export default Router;

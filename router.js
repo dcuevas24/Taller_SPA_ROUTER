@@ -30,6 +30,12 @@ class Router {
       );
     });
 
+    if (matchedRoute === undefined) {
+      return {
+        template: "<h1>Not found</h1>",
+      };
+    }
+
     return matchedRoute;
   }
 

@@ -1,6 +1,6 @@
 const routes = [
   {
-    path: "/",
+    path: "/home",
     template: "<h1>Hola</h1>",
   },
   {
